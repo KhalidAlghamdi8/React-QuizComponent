@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import QuizQuestion from './QuizQuestion.js'
 import QuizEnd from './QuizEnd.js'
 
@@ -15,7 +15,7 @@ class Quiz extends Component {
         this.setState((state) => { return { quiz_position: state.quiz_position + 1 } })
    
     }
-    handleResetClick {
+    handleResetClick () {
     this.setState({ quiz_position : 1 })
 }
     render() {
@@ -26,6 +26,6 @@ class Quiz extends Component {
                     <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} showNextQuestionHandler={this.showNextQuestion.bind(this)} />}
             </div>
         )
+    }
 }
-
 export default Quiz
