@@ -8,11 +8,11 @@ class Quiz extends Component {
     constructor(props)
     {
         super(props)
-        this.state = {quiz_position:1}
-    }
-showNextQuestion() {
-        this.setState((state) => {return {quiz_poestion: state.quiz_opsition + 1}
-            })
+        this.state = { quiz_position: 1 }
+    } 
+    showNextQuestion()
+    {
+        this.setState((state) => { return { quiz_position: state.quiz_opsition + 1}})
    
     }
     render() {
